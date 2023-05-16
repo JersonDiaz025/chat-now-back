@@ -1,0 +1,42 @@
+# Archivos generados por IDEs y editores de texto
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Dependencias y módulos de Node.js
+node_modules/
+
+# Archivos de configuración
+config.js
+.env
+
+# Archivos de registro y de salida
+*.log
+*.out
+
+# Archivos de compilación
+dist/
+
+# Archivos de respaldo y temporales
+*.bak
+*.tmp
+
+# Archivos específicos de lenguajes y entornos
+*.pyc
+*.class
+*.jar
+
+# Archivos de caché y directorios generados
+.cache/
+.tmp/
+.build/
+
+# Archivos sensibles o privados
+secrets.json
+credentials.json
+
+# Archivos de almacenamiento de datos
+data/
+
+# Otros archivos y carpetas personalizadas que deseas ignorar
