@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-import connectDB from '../server/config/mongoose.js';
+import connectDB from './config/mongoose.js';
 import express from "express";
 import morgan from 'morgan';
 import { Server as Socketserver } from 'socket.io';

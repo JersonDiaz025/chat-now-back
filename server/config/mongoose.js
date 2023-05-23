@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.URL_DB, {
+    await mongoose.connect(process.env.URL_DB, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
