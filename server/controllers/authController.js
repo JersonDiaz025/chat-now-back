@@ -28,8 +28,8 @@ const authController = {
       // Enviar respuesta al cliente
       res.json({
         message: "Sucess",
-        token,
         user: {
+          token: token,
           _id: user._id,
           name: user.username,
           password: password,

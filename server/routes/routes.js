@@ -1,9 +1,10 @@
 import express from "express";
 import authController from "../controllers/authController.js";
 import msgController from '../controllers/message.js'
+import verifyToken from "../middlewares/verifyToken.js";
 
 //  Destructurin all controllers
-const { login, logout, register } = authController;
+const { login, register } = authController;
 
 // Controllers msgs
 const { saveMessages, getMessages } = msgController;
@@ -15,7 +16,7 @@ router.post('/login', login);
 router.post('/signUp', register);
 
 // Routes messages
-router.post('/saveMsg', saveMessages);
-router.get('/messages', getMessages);
+router.post('/saveMsg',verifyToken, saveMessages);
+router.get('/messages',verifyToken, getMessages);
 
 export default router;
