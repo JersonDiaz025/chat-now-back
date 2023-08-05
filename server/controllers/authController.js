@@ -32,7 +32,7 @@ const authController = {
           token: token,
           _id: user._id,
           name: user.username,
-          password: password,
+          // password: password,
           email: user.email,
         },
       });
